@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="language" content="Ru-ru" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>HayatStroy</title>
+    <meta name="description" content="Фасаты для зданий по Дагестану" />
+    <meta name="keywords" content="Фасады, Дагестан" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header" class="header">
+        <div class="container">
+          <div class="row">
+            <div class="header__container">
+              <a href="#" class="logo">HayatStroy</a>
+              <nav class="header__desctop-nav">
+                <ul class="header__desctop-nav__items">
+                  <li class="nav-item header__desctop-nav__item"><a href="#" class="link">Галерея</a></li>
+                  <li class="nav-item header__desctop-nav__item"><a href="#" class="link">Новинки</a></li>
+                  <li class="nav-item header__desctop-nav__item"><a href="#" class="link">Хиты сезона</a></li>
+                  <li class="nav-item header__desctop-nav__item"><a href="#" class="link">Новости</a></li>
+                  <li class="nav-item header__desctop-nav__item"><a href="#" class="link">О нас</a></li>
+                </ul>
+              </nav>
+              <burger class="burger"><span></span></burger>
+              <nav class="header__mobile-nav">
+                <ul class="header__mobile-nav__items">
+                  <li class="nav-item header__mobile-nav__item"><a href="#" class="link">Галерея</a></li>
+                  <li class="nav-item header__mobile-nav__item"><a href="#" class="link">Новинки</a></li>
+                  <li class="nav-item header__mobile-nav__item"><a href="#" class="link">Хиты сезона</a></li>
+                  <li class="nav-item header__mobile-nav__item"><a href="#" class="link">Новости</a></li>
+                  <li class="nav-item header__mobile-nav__item"><a href="#" class="link">О нас</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section id="swiper">
+          <div class="container">
+            <!-- Swiper -->
+            <div class="swiper previewSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="">
+          <div class="container">
+            <div class="row"></div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row"></div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="row"></div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js" defer></script>
+    <script src="js/burger.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.previewSwiper', {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
