@@ -1,12 +1,20 @@
 @import 'zero';
-@import 'var';
+
+//vars
+@import './vars/colors';
+@import './vars/sizes';
+@import './vars/adaptive_mixin';
+
 @import 'common';
 
 @import 'ui/buttons';
 @import 'ui/inputs';
 @import 'ui/burger';
 @import 'ui/simple-swiper';
+@import 'ui/gallery';
 
 @import 'templates/header';
-@import 'templates/main';
+@import 'templates/home';
+@import 'templates/about';
+@import 'templates/gallery';
 @import 'templates/footer';

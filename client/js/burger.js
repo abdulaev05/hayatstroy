@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.classList.toggle('active');
   };
   const burgerClose = () => {
-    burger.classList.remove('active');
+    setTimeout(() => {
+      burger.classList.remove('active');
+    }, 200);
   };
   const clickOutsideHeader = (e) => {
     const hasHeader = e.composedPath().includes(header);

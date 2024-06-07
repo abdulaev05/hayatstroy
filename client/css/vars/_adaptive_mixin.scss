@@ -1,0 +1,17 @@
+@mixin adaptive_property($f-min, $f-max, $property) {
+  $k: calc(($f-max - $f-min) / ($max-w-container - $min-w-container));
+  $b: calc($f-min - $k * $min-w-container);
+
+  #{$property}: $f-min;
+
+  @media ((min-width: $min-w-container) and (max-width: $max-w-container)) {
+    #{$property}: calc($k * 100vw + $b);
+  }
+  @media (min-width: $max-w-container) {
+    #{$property}: $f-max;
+  }
+}
+
+// .class {
+//   @include adaptive_property(16px, 24px, font-size);
+// }

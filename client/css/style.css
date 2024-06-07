@@ -111,11 +111,39 @@ legend {
   display: block;
 }
 
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+section {
+  margin-bottom: 40px;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  section {
+    margin-bottom: calc(2.7777777778vw + 31.1111111111px);
+  }
+}
+@media (min-width: 1400px) {
+  section {
+    margin-bottom: 70px;
+  }
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
+  width: 100%;
+  min-height: 100dvh;
   overflow: hidden;
 }
 
@@ -135,8 +163,18 @@ legend {
 .logo {
   color: #b333e9;
   text-wrap: nowrap;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 700;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  .logo {
+    font-size: calc(0.9259259259vw + 23.037037037px);
+  }
+}
+@media (min-width: 1400px) {
+  .logo {
+    font-size: 36px;
+  }
 }
 
 .link,
@@ -149,6 +187,36 @@ legend {
   padding: 15px 20px;
   font-weight: 700;
   transition: background 0.5s, color 0.5s;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  row-gap: 10px;
+  font-size: 20px;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  .social-media {
+    font-size: calc(0.5555555556vw + 18.2222222222px);
+  }
+}
+@media (min-width: 1400px) {
+  .social-media {
+    font-size: 26px;
+  }
+}
+
+.whatsapp {
+  color: #28d146;
+  cursor: pointer;
+}
+
+.instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  cursor: pointer;
 }
 
 @media screen and (hover: hover) {
@@ -165,11 +233,6 @@ legend {
             user-select: none;
     color: #fff;
     background-color: #6910a8;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    font-size: 34px;
   }
 }
 .burger {
@@ -237,6 +300,19 @@ legend {
   font-size: 32px;
 }
 
+.gallery__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 5px;
+}
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -296,4 +372,102 @@ legend {
     height: 50px;
     transition: background 0.3s, color 0.3s;
   }
+}
+.about__container {
+  padding-block: 30px;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  .about__container {
+    padding-block: calc(2.7777777778vw + 21.1111111111px);
+  }
+}
+@media (min-width: 1400px) {
+  .about__container {
+    padding-block: 60px;
+  }
+}
+.about__container > * {
+  margin-bottom: 22px;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  .about__container > * {
+    margin-bottom: calc(1.6666666667vw + 16.6666666667px);
+  }
+}
+@media (min-width: 1400px) {
+  .about__container > * {
+    margin-bottom: 40px;
+  }
+}
+.about__title {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  .about__title {
+    font-size: calc(0.9259259259vw + 19.037037037px);
+  }
+}
+@media (min-width: 1400px) {
+  .about__title {
+    font-size: 32px;
+  }
+}
+.about__title2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  .about__title2 {
+    font-size: calc(0.7407407407vw + 17.6296296296px);
+  }
+}
+@media (min-width: 1400px) {
+  .about__title2 {
+    font-size: 28px;
+  }
+}
+.about__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  .about__list {
+    font-size: calc(0.1851851852vw + 15.4074074074px);
+  }
+}
+@media (min-width: 1400px) {
+  .about__list {
+    font-size: 18px;
+  }
+}
+.about__postscript {
+  font-size: 16px;
+  font-weight: bold;
+}
+@media ((min-width: 320px) and (max-width: 1400px)) {
+  .about__postscript {
+    font-size: calc(0.1851851852vw + 15.4074074074px);
+  }
+}
+@media (min-width: 1400px) {
+  .about__postscript {
+    font-size: 18px;
+  }
+}
+.about li {
+  list-style: disc;
+}
+
+.footer {
+  padding-bottom: 10px;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
 }
