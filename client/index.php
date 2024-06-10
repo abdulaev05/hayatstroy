@@ -15,7 +15,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <header id="header" class="header">
+      <?php include '/WebDev/React/hayatstroy/client/templates/header.html'; ?>
+      <!-- <header id="header" class="header">
         <div class="container">
           <div class="row">
             <div class="header__container">
@@ -42,7 +43,7 @@
             </div>
           </div>
         </div>
-      </header>
+      </header> -->
       <main class="home">
         <section id="swiper">
           <div class="container">
@@ -67,7 +68,8 @@
           </div>
         </section>
       </main>
-      <footer id="footer" class="footer">
+      <?php include '/WebDev/React/hayatstroy/client/templates/footer.html'; ?>
+      <!-- <footer id="footer" class="footer">
         <div class="container">
           <div class="row">
             <div class="footer__container">
@@ -82,7 +84,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
 
     <script src="js/swiper-bundle.min.js" defer></script>
