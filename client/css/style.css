@@ -464,6 +464,27 @@ section {
   list-style: disc;
 }
 
+.gallery__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 5px;
+}
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.gallery__item img {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  flex-grow: 1;
+}
+
 .footer {
   padding-bottom: 10px;
 }
